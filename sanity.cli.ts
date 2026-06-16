@@ -7,7 +7,7 @@ export default defineCliConfig({
   },
   studioHost: 'steroidssupplies',
   deployment: {
-    appId: 'cltbqadknswifytfrxocjzhf',
+    appId: 'txh96vg3ykr1ehk621uaxv7j',
     autoUpdates: true,
-  }
+  },
 })

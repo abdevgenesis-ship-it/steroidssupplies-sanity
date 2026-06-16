@@ -1,7 +1,7 @@
 import {createClient, type SanityClient} from '@sanity/client'
 import {getCliClient} from 'sanity/cli'
 
-const PROJECT_ID = '8fp9giy6'
+const PROJECT_ID = 'gxu7e27l'
 const DATASET = 'production'
 const API_VERSION = '2024-02-01'
 

@@ -20,9 +20,9 @@ import {
 
 export default defineConfig({
   name: 'default',
-  title: 'THC Pens Bulk',
+  title: 'SteroidsSupplies',
 
-  projectId: 'as9s0n0w',
+  projectId: 'gxu7e27l',
   dataset: 'production',
 
   plugins: [
