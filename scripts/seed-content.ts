@@ -37,10 +37,10 @@ async function seed() {
     _id: 'siteSettings',
     _type: 'siteSettings',
     announcementBar:
-      'Fast 48-hour tracked delivery across the UK, USA & Worldwide — same-day priority dispatch available.',
+      'Fast 48-hour tracked delivery across the UK, USA & Worldwide — priority same-day dispatch available.',
     announcementHref: '/shipping',
     footerWarningText:
-      'All products on SteroidsSupplies.co.uk are intended strictly for adults 18 years of age or older only. Anabolic androgenic steroids (AAS) are highly active hormonal compounds that profoundly alter human endocrinology. Use only under direct medical supervision from a licensed clinical professional.',
+      'All products on SteroidsSupplies.co.uk are strictly for adults 18 years of age or older. Anabolic androgenic steroids are potent hormonal compounds that profoundly alter human endocrinology. Do not use if pregnant or nursing. Never administer any compound without direct medical supervision from a licensed clinical professional. Keep all compounds out of reach of children and pets.',
     footerComplianceText:
       'STEROIDSSUPPLIES operates as a global B2C and B2B wholesale supplier of anabolic androgenic steroids (AAS) and performance compounds. The purchase, import, and possession of AAS are governed by regional laws that vary by country. It is the sole responsibility of the buyer to verify and comply with all applicable local laws before ordering.',
     homepageBadge: 'SteroidsSupplies',
@@ -56,12 +56,12 @@ async function seed() {
   await upsert({
     _id: 'ff42da08-7a52-4d28-9f62-016a68ca4167',
     _type: 'homePage',
-    heroBadge: 'SteroidsSupplies.co.uk',
+    heroBadge: 'SteroidsSupplies',
     heroHeading: 'Buy Steroids Online from the Ultimate Global Performance Source',
     heroSubheading:
       'Order certified anabolic steroids for sale with institutional-grade quality control and guaranteed 48-hour priority international shipping.',
     heroPrimaryCtaLabel: 'Shop Anabolic Steroids',
-    heroPrimaryCtaHref: '/category/injectable-steroids',
+    heroPrimaryCtaHref: '/products',
     heroSecondaryCtaLabel: 'Apply for Wholesale',
     heroSecondaryCtaHref: '/wholesale',
     trustStripItems: [
@@ -77,7 +77,7 @@ async function seed() {
     authorityEyebrow: 'Institutional QC Supply',
     authorityHeading: 'High-Margin Wholesale Anabolic Steroids for Global B2C and B2B Buyers',
     authorityIntro:
-      'When you choose to buy steroids online from SteroidsSupplies, you are bypassing underground black-market guesswork and tapping directly into an institutional-grade supply chain. We specialize in bringing the highest purity anabolic steroids for sale straight to elite athletes, bodybuilders, and wholesale buyers across the UK, USA, and worldwide. Every single batch is third-party HPLC tested, ensuring that when you order anabolic steroids through our encrypted platform, you receive unmatched potency at the best prices on the market.',
+      'When you choose to **buy anabolic steroids online** from SteroidsSupplies, you are bypassing underground black-market guesswork and tapping directly into an institutional-grade supply chain. We specialize in bringing the highest purity **anabolic steroids for sale** straight to elite athletes, bodybuilders, and wholesale buyers across the UK, USA, and worldwide. Every single batch is third-party tested, ensuring that when you order through our encrypted platform, you receive unmatched potency at the best prices on the market.\n\n[[H2]]\n\nTo safely buy steroids online, athletes must look beyond flash marketing and prioritize rigorous laboratory verification. Our retail e-commerce storefront and wholesale distribution channels are meticulously structured to provide an ultra-secure environment to **purchase anabolic steroids**. Whether you are looking for oral anabolic steroids to kickstart a lean bulk or injectable anabolic steroids for an advanced contest prep stack, our catalogue contains only the top anabolic steroids on the market.\n\nWe cut out the middlemen to offer **steroids online** and global shipments at deep factory-direct discounts. Don\'t risk your health or money on unverified underground labs — purchase from a verified global supplier that guarantees your gear arrives safely.\n\nOur catalog spans the most in-demand compounds your cycle demands:\n\n[[OUTRO]]\n\n**Fast Tracked Shipping Across the UK, USA & Worldwide**\n\nWe understand that supply consistency is critical. Our fulfillment network is engineered for speed: orders confirmed before our daily cutoff are packaged and handed to shipping partners within hours, with 48-hour tracked delivery as standard.\n\nInternational wholesale orders to the UK, Europe, and worldwide ship via tracked courier with full insurance on every consignment and our 100% customs clearance guarantee.',
     authorityPoints: [
       {_type: 'homeAuthorityPoint', _key: 'ap-0', title: 'HPLC-Verified Purity', description: 'Every compound undergoes strict third-party HPLC analysis guaranteeing absolute purity, correct ester weight, and zero bacterial contamination. COA documentation available on request.', iconKey: 'badgeCheck'},
       {_type: 'homeAuthorityPoint', _key: 'ap-1', title: 'Tiered Wholesale Pricing', description: 'Three progressive bulk discount tiers applied automatically at checkout. No broker fees — manufacturer-direct pricing for gym networks, distributors, and retail labels.', iconKey: 'walletCards'},
@@ -98,7 +98,7 @@ async function seed() {
       'All commercial orders are packed using industrial vacuum sealing, discreet non-descript container shapes, and completely anonymous shipping routes. Guaranteed 48-hour tracked delivery globally with same-day priority dispatch available.',
     deliveryCtaLabel: 'View Shipping Policy',
     deliveryCtaHref: '/shipping',
-    howToBadge: 'Simple Ordering',
+    howToBadge: 'Simple Process',
     howToHeading: 'How to Order in 4 Steps',
     howToIntro: 'From catalog browse to delivered compounds in four streamlined steps.',
     howToSteps: [
@@ -115,12 +115,12 @@ async function seed() {
       'For gym networks, private labels, and high-volume distributors, our wholesale platform provides direct access to manufacturing volume. Order bulk injectable vials, oral tablet batches, and PCT compound stacks at true manufacturing costs with guaranteed 48-hour priority shipping.',
     wholesaleMidCtaLabel: 'Apply for Wholesale',
     wholesaleMidCtaHref: '/wholesale',
-    brandsEyebrow: 'Top Compounds',
-    brandsHeading: 'Featured Products',
-    brandsEmptyMessage: 'No featured products at this time.',
-    testimonialsBadge: 'Verified Buyers',
-    testimonialsHeading: 'What Our Buyers Say',
-    testimonialsIntro: 'Feedback from verified retail and wholesale customers.',
+    brandsEyebrow: 'Brand Partners',
+    brandsHeading: 'Brands We Carry',
+    brandsEmptyMessage: 'No homepage brands configured yet.',
+    testimonialsBadge: 'Trusted by Buyers',
+    testimonialsHeading: 'Trusted by Thousands',
+    testimonialsIntro: 'Real feedback from athletes, bodybuilders, and wholesale partners sourcing certified anabolic steroids from SteroidsSupplies.',
     blogEyebrow: 'Performance Insights',
     blogHeading: 'Latest from the Blog',
     blogDescription:
@@ -218,7 +218,7 @@ async function seed() {
   await upsert({
     _id: 'aboutPage',
     _type: 'aboutPage',
-    seoTitle: 'About SteroidsSupplies | Certified Global Performance Compound Supplier',
+    seoTitle: 'About SteroidsSupplies | Certified Performance Logistics',
     seoDescription:
       'Read the history and operational standards of SteroidsSupplies. We provide premium-grade anabolic steroids to retail and wholesale markets globally with HPLC-verified purity and guaranteed 48h delivery.',
     pageHeading: 'About SteroidsSupplies — Redefining Anabolic Quality Standards',
