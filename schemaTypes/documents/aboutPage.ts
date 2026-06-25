@@ -10,7 +10,7 @@ export const aboutPage = defineType({
       title: 'SEO title',
       type: 'string',
       description: 'Browser tab title (keep unique and B2B-focused).',
-      initialValue: 'About SteroidsSupplies — Certified Global Anabolic Steroids Supplier',
+      initialValue: 'About Steroids Supplies | Certified Performance Logistics',
       validation: (rule) => rule.required().min(20).max(120),
     }),
     defineField({
@@ -24,7 +24,7 @@ export const aboutPage = defineType({
       name: 'pageHeading',
       title: 'Page H1',
       type: 'string',
-      initialValue: 'About SteroidsSupplies',
+      initialValue: 'About Steroids Supplies – Redefining Anabolic Quality Standards',
       validation: (rule) => rule.required().min(3).max(120),
     }),
     defineField({
@@ -38,7 +38,7 @@ export const aboutPage = defineType({
       name: 'storyHeading',
       title: 'Our story — heading',
       type: 'string',
-      initialValue: 'Our Story',
+      initialValue: 'Our Foundational Mission',
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -60,7 +60,7 @@ export const aboutPage = defineType({
       name: 'missionHeading',
       title: 'Mission — heading',
       type: 'string',
-      initialValue: 'Our Mission',
+      initialValue: 'What Sets Our Distribution Infrastructure Apart',
       validation: (rule) => rule.required(),
     }),
     defineField({
