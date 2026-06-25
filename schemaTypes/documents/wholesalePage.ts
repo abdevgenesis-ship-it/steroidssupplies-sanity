@@ -57,6 +57,95 @@ export const wholesalePage = defineType({
       validation: (rule) => rule.required().max(80),
     }),
     defineField({
+      name: 'introSectionHeading',
+      title: 'Section 1 — introduction heading',
+      type: 'string',
+      description: 'Short label for the high-conversion introduction block.',
+      validation: (rule) => rule.max(120),
+    }),
+    defineField({
+      name: 'introSectionText',
+      title: 'Section 1 — introduction text',
+      type: 'text',
+      rows: 5,
+      description: 'Short high-conversion introduction shown below the hero.',
+    }),
+    defineField({
+      name: 'semanticContentHeading',
+      title: 'Section 2 — rich text heading',
+      type: 'string',
+      description: 'Heading for the semantic rich content block.',
+      validation: (rule) => rule.max(140),
+    }),
+    defineField({
+      name: 'semanticContentSections',
+      title: 'Section 2 — rich text sections',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'heading',
+              title: 'Heading',
+              type: 'string',
+              validation: (rule) => rule.required().max(140),
+            }),
+            defineField({
+              name: 'paragraphs',
+              title: 'Paragraphs',
+              type: 'array',
+              of: [defineArrayMember({type: 'text', rows: 3})],
+              validation: (rule) => rule.required().min(1).max(4),
+            }),
+          ],
+          preview: {
+            select: {
+              title: 'heading',
+            },
+          },
+        }),
+      ],
+      validation: (rule) => rule.max(6),
+    }),
+    defineField({
+      name: 'wholesaleTargetRows',
+      title: 'Section 2 — wholesale target table rows',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'target',
+              title: 'Wholesale target',
+              type: 'string',
+              validation: (rule) => rule.required().max(100),
+            }),
+            defineField({
+              name: 'assetAdvantage',
+              title: 'Asset advantage',
+              type: 'string',
+              validation: (rule) => rule.required().max(120),
+            }),
+            defineField({
+              name: 'logisticalDispatch',
+              title: 'Logistical dispatch',
+              type: 'string',
+              validation: (rule) => rule.required().max(120),
+            }),
+          ],
+          preview: {
+            select: {
+              title: 'target',
+              subtitle: 'assetAdvantage',
+            },
+          },
+        }),
+      ],
+      validation: (rule) => rule.max(8),
+    }),
+    defineField({
       name: 'whyHeading',
       title: 'Why wholesale heading',
       type: 'string',
