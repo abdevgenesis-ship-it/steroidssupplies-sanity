@@ -35,6 +35,8 @@ export const faqItem = defineType({
           {title: 'PCT', value: 'PCT'},
           {title: 'Steroids', value: 'Steroids'},
           {title: 'Wholesale', value: 'Wholesale'},
+          {title: 'Anavar', value: 'Anavar'},
+          {title: 'Trenbolone', value: 'Trenbolone'},
         ],
       },
       initialValue: 'General',
